@@ -6,8 +6,12 @@
 <meta content="ラフノート株式会社のコーポレートサイトです。文書管理ツール「Ruffnote」とタイムトラッキングツール「TimeCrowd」の開発・運営をしています" name="description" />
 <link href="./img/favicon.ico" rel="icon" type="image/ico" />
 <title>ラフノート株式会社</title>
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css" />
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 body {
   text-align: center;
 }
@@ -25,7 +29,12 @@ li {
 }
 h2 {
   clear:both;
+  margin: 60px 0 40px;
 }
+p {
+  margin: 30px;
+}
+
 .wrapper {
   width: 1000px;
   margin: 0 auto;
@@ -40,9 +49,23 @@ h2 {
   float:right;
   text-align:left;
 }
+
+hr.header {
+  background: #000;
+  height: 10px;
+}
+
+#footer {
+  margin-top: 20px;
+  padding: 60px 0 60px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+}
 </style>
 </head>
 <body>
+<hr class='header' />
 <img src='./img/logo.png' width='200px' />
 <h1>ラフノート株式会社</h1>
 <p>ラフノート株式会社はオンラインツールの提供を通じて新しい働き方を提案します</p>
@@ -128,7 +151,7 @@ TimeCrowdはオンライン上でタスク管理ができ、それぞれに対�
 
 <hr />
 
-<div>Copyright &copy Ruffnote Inc.</div>
+<div id='footer'>Copyright &copy Ruffnote Inc.</div>
 
 </body>
 </html>
