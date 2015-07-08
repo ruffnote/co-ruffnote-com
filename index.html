@@ -15,6 +15,7 @@
 body {
   text-align: center;
 }
+
 table{
   margin: 0 auto;
 }
@@ -32,7 +33,7 @@ h2 {
   margin: 60px 0 40px;
 }
 p {
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .wrapper {
@@ -50,9 +51,15 @@ p {
   text-align:left;
 }
 
-hr.header {
+hr.header, hr.left, hr.right {
   background: #000;
+  position: fixed;
+}
+
+hr.header {
+  top: 0;
   height: 10px;
+  width: 100%;
 }
 
 #footer {
@@ -65,10 +72,9 @@ hr.header {
 </style>
 </head>
 <body>
-<hr class='header' />
 <img src='./img/logo.png' width='200px' />
 <h1>ラフノート株式会社</h1>
-<p>ラフノート株式会社はオンラインツールの提供を通じて新しい働き方を提案します</p>
+<p>ラフノート株式会社のコーポレートサイトをご覧頂き、ありがとうございます。</p>
 
 <hr />
 
@@ -80,8 +86,9 @@ hr.header {
 <div class='wrapper'>
 <div class='left'>
 <h3>Ruffnote（ラフノート）</h3>
-<img src='./img/ruffnote.png' height='300px' />
 <p>
+<img src='./img/ruffnote.png' height='300px' /><br>
+<br>
 あらゆる製品やサービスには「文書」があり、<br>
 継続して安定供給するためには「文書の更新」が必要です。<br>
 しかし、IT化が進んだ現代においても、文書の更新は<br>
@@ -98,8 +105,9 @@ Ruffnoteは全ての文書をオンライン上で編集することで<br>
 </div>
 <div class='right'>
 <h3>TimeCrowd（タイムクラウド）</h3>
-<img src='./img/timecrowd.png' height='300px' />
 <p>
+<img src='./img/timecrowd.png' height='300px' /><br>
+<br>
 あらゆる製品やサービスには「原価」があり、<br>
 継続して安定供給するためには「原価計算」が必要です。<br>
 しかし、「人件費」だけは<br>
@@ -149,9 +157,6 @@ TimeCrowdはオンライン上でタスク管理ができ、それぞれに対�
 <h2>お問い合わせ</h2>
 <a href="mailto:info@ruffnote.com">info@ruffnote.com</a><br>までご連絡ください
 
-<hr />
-
 <div id='footer'>Copyright &copy Ruffnote Inc.</div>
-
 </body>
 </html>
